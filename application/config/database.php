@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '3306',
+	'hostname' => 'http://34.123.78.0:3306/',
 	'username' => 'php',
 	'password' => 'php',
 	'database' => 'cloud_computing',
