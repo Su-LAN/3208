@@ -23,19 +23,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+$config['base_url'] = 'https://infs3202-5b0df042.uqcloud.net/infs3200/';
 
 /*
 |--------------------------------------------------------------------------
 | Index File
 |--------------------------------------------------------------------------
 |
-| Typically this will be your index.php file, unless you've renamed it to
+| Typically this will be your   file, unless you've renamed it to
 | something else. If you are using mod_rewrite to remove the page set this
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = ' ';
 
 /*
 |--------------------------------------------------------------------------
@@ -136,7 +136,8 @@ $config['subclass_prefix'] = 'MY_';
 | Note: This will NOT disable or override the CodeIgniter-specific
 |	autoloading (application/config/autoload.php)
 */
-$config['composer_autoload'] = FALSE;
+// $config['composer_autoload'] = FALSE;
+$config['composer_autoload'] = 'vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -175,7 +176,7 @@ $config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-';
 |
 | The other items let you set the query string 'words' that will
 | invoke your controllers and its functions:
-| example.com/index.php?c=controller&m=function
+| example.com/ ?c=controller&m=function
 |
 | Please note that some of the helpers won't work as expected when
 | this feature is enabled, since CodeIgniter is designed primarily to
@@ -521,3 +522,5 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+
