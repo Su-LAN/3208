@@ -42,7 +42,7 @@ function compare(lasttime){
         console.log("111");
         // window.location.href = "<?php echo base_url()?>login/logout";
         $.ajax({
-            url: "<?php echo base_url();?>login/auto_logout",
+            url: "<?php echo base_url();?>index.php/login/auto_logout",
             method:"post",
             data:{},
             success:function(result) {

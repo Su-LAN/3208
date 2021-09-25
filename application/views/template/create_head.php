@@ -55,10 +55,10 @@
                <div class="menu">
                   <ul>
                   <li>
-                   <a href="<?php echo base_url(); ?>homepage"> Home </a>
+                   <a href="<?php echo base_url(); ?>index.php/homepage"> Home </a>
                     </li>
                     <li>
-                   <a href="<?php echo base_url(); ?>login"> Login </a>
+                   <a href="<?php echo base_url(); ?>index.php/login"> Login </a>
                     </li>
                   </ul>
                </div>

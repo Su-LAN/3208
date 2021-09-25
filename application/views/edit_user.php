@@ -20,11 +20,11 @@
                </div>
                <div class="menu">
                   <ul>
-                     <li><a href="<?php echo base_url(); ?>user">Back to profile</a></li>
+                     <li><a href="<?php echo base_url(); ?>index.php/user">Back to profile</a></li>
                   </ul>
                </div>
             </nav>
-            <form action="<?php echo base_url().'user/edit_user_info';?>" method="post" enctype="multipart/form-data">
+            <form action="<?php echo base_url().'index.php/user/edit_user_info';?>" method="post" enctype="multipart/form-data">
 <div class="page-content page-container" id="page-content">
     <div class="padding">
         <div class="container d-flex justify-content-center" id = "row">

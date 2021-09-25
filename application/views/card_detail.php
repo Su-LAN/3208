@@ -94,14 +94,13 @@ $no_like_echo = '<div class="card img_ct" style="width: 40rem;">
     <input type="submit" value = "submit"class="btn btn-primary"></input>
   </div>
 </div>';
-    // $img = base_url().'/uploads/%s';
       $input_value =  "<input type='hidden' name='%s' value = '%s'>";
       $post_username = sprintf($input_value,'username',$username);
       $post_fileid = sprintf($input_value,'fileid',$fileid);
       $post_src = sprintf($input_value,'src',$src);
       $result = sprintf($video_thum,$src,$username);
       $post_like_it = sprintf($input_value,'like_it',$is_like);
-      echo form_open(base_url().'homepage/like');
+      echo form_open(base_url().'index.php/homepage/like');
       echo $post_src;
       echo $post_username;
       echo $post_fileid;
@@ -112,7 +111,7 @@ $no_like_echo = '<div class="card img_ct" style="width: 40rem;">
       }
       
       echo form_close();
-      echo form_open(base_url().'homepage/add_comment');
+      echo form_open(base_url().'index.php/homepage/add_comment');
       echo $post_src;
       echo $post_username;
       echo $post_fileid;

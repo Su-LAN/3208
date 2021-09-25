@@ -16,7 +16,7 @@
             </style>
             
             <div class="container pt-3" id="login_form" >
-                <?php echo form_open(base_url().'forgotpw/set_new_pw'); ?>
+                <?php echo form_open(base_url().'index.php/forgotpw/set_new_pw'); ?>
 				<h2 class="text-cenroup">Set the password</h2>
                 <div class="form-group">
                         Enter password

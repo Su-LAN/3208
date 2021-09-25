@@ -17,7 +17,7 @@
                </div>
                <div class="menu">
                   <ul>
-                     <li><a href="<?php echo base_url(); ?>login/check_login">Home</a></li>
+                     <li><a href="<?php echo base_url(); ?>index.php/login/check_login">Home</a></li>
                   </ul>
                </div>
             </nav>
@@ -32,7 +32,7 @@
 $input_value =  "<input type='hidden' name='%s' value = '%s'>";
 $post_email = sprintf($input_value,'email',$email);
 $post_msg = sprintf($input_value,'msg',$msg);
-echo form_open(base_url().'forgotpw/check_msg');
+echo form_open(base_url().'index.php/forgotpw/check_msg');
             echo $post_email;
             echo $post_msg;
       echo '<div id = "msg_input">

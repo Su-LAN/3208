@@ -20,7 +20,7 @@
                </div>
                <div class="menu">
                   <ul>
-                     <li><a href="<?php echo base_url(); ?>login/check_login">Home</a></li>
+                     <li><a href="<?php echo base_url(); ?>index.php/login/check_login">Home</a></li>
                   </ul>
                </div>
             </nav>
@@ -85,7 +85,7 @@
                                                 $submit_btn = '<br><input type="submit" value = "confirm"class="btn btn-primary"></input>';
                                                 $input_value =  "<input type='hidden' name='email' value = '%s'>";
                                                 $post_email = sprintf($input_value,$email);
-                                                echo form_open(base_url().'user/confirm_email');
+                                                echo form_open(base_url().'index.php/user/confirm_email');
                                                 echo $post_email;
                                                 echo "NO";
                                                 echo $submit_btn;
@@ -101,7 +101,7 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <p class="m-b-10 f-w-600">Share with your friend</p>
-                                        <a href="http://www.facebook.com/sharer.php?u=<?php echo base_url();?>/homepage">
+                                        <a href="http://www.facebook.com/sharer.php?u=<?php echo base_url();?>index.php/homepage">
                                         share with your facebook friend 
                                         </a>
                                     </div>

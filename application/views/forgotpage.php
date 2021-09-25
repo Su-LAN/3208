@@ -1,5 +1,5 @@
 <div class="container pt-3" id="login_form" >
-    <?php echo form_open(base_url().'forgotpw/forget_pw'); ?>
+    <?php echo form_open(base_url().'index.php/forgotpw/forget_pw'); ?>
 				<h2 class="text-center">Forget the password</h2>
                     <div class="form-group">
                         Enter your E-mail

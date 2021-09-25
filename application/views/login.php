@@ -13,7 +13,7 @@ function check_username_cookies(){
 }
 </script>
       <div class="container pt-3" id="login_form" >
-			<?php echo form_open(base_url().'login/check_login'); ?>
+			<?php echo form_open(base_url().'index.php/login/check_login'); ?>
 				<h2 class="text-center">User Login</h2>
 					<div class="form-group">
 						<input keyup="check_username_cookies()" onFocus="check_username_cookies()" onBlur="check_username_cookies()" type="text" id="username_input" class="form-control" placeholder="Username" required="required" name="username">

@@ -65,7 +65,7 @@ class Homepage extends CI_Controller
         $array = json_decode(json_encode($query), true);
         $data["username"] = $array["username"];
         $data["is_like"] = $this->file_model->check_like($this->session->userdata("username"),$fileid);
-        $data["src"]= base_url().'/uploads/'.$array["filename"];
+        $data["src"]= base_url().'index.php/uploads/'.$array["filename"];
         $data["query"] = $this->file_model->show_description_detail($fileid);
         $data["fileid"] = $this->input->post('fileid');
         $data["is_login"]=$this->session->userdata('logged_in');

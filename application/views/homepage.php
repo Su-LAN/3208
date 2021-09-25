@@ -39,7 +39,7 @@ $ppp = '
   <input type="submit" value = "Collected" class="btn btn-primary float-end"></input>
 </div>
 </div>';
-    $img = base_url().'/uploads/%s';
+    $img = base_url().'index.php//uploads/%s';
         foreach($query as $value){
           $array = json_decode(json_encode($value), true);
           $img_file = sprintf($img, $array['filename']);
@@ -50,13 +50,13 @@ $ppp = '
           $post_fileid = sprintf($input_value,'fileid',$array['id']);
           $post_src = sprintf($input_value,'src',$img_file);
           $this->load->model('file_model');
-          echo form_open(base_url().'homepage/show_detail');
+          echo form_open(base_url().'index.php/homepage/show_detail');
           echo $post_username;
           echo $post_fileid;
           echo $post_src;
           echo $result;
           echo form_close();
-          echo form_open(base_url().'homepage/collect');
+          echo form_open(base_url().'index.php/homepage/collect');
           echo $post_fileid;
           //echo $ooo;
           if($this->file_model->check_collect($username,$array['id'])){

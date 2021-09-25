@@ -24,9 +24,9 @@ class Products extends CI_Controller{
      
     function buy($id){ 
         // Set variables for paypal form 
-        $returnURL = base_url().'paypal/success'; //payment success url 
-        $cancelURL = base_url().'paypal/cancel'; //payment cancel url 
-        $notifyURL = base_url().'paypal/ipn'; //ipn url 
+        $returnURL = base_url().'index.php/paypal/success'; //payment success url 
+        $cancelURL = base_url().'index.php/paypal/cancel'; //payment cancel url 
+        $notifyURL = base_url().'index.php/paypal/ipn'; //ipn url 
          
         // Get product data from the database 
         $product = $this->product->getRows($id); 

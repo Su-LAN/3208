@@ -4,7 +4,7 @@
     margin-left: 10vw;
 }
 </style>
-<?php echo form_open(base_url().'email/send'); ?>
+<?php echo form_open(base_url().'index.php/email/send'); ?>
 <div class="col-md-9" >
 		<div class="panel panel-default">
 			<div class="panel-body message">

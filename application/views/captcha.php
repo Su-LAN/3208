@@ -39,30 +39,6 @@
                 }
                 ?>
                 <div class="g-recaptcha" data-sitekey="6LcuztkaAAAAAM6L9F1ceUOdS9Ym6zw7gRqRmQQ3"></div>
-                <!-- <form method="post" action="<?php echo base_url(); ?>captcha/validate">
-                    <div class="form-group">
-                        <label>First Name</label>
-                        <input type="text" name="first_name" class="form-control" />
-                    </div>
-                    <div class="form-group">
-                        <label>Last Name</label>
-                        <input type="text" name="last_name" class="form-control" />
-                    </div>
-                    <div class="form-group">
-                        <label>Age</label>
-                        <input type="text" name="age" class="form-control" />
-                    </div>
-                    <div class="form-group">
-                        <label>Gender</label>
-                        <input type="text" name="gender" class="form-control" />
-                    </div>
-                    <div class="form-group">
-                        <div class="g-recaptcha" data-sitekey="6LcuztkaAAAAAM6L9F1ceUOdS9Ym6zw7gRqRmQQ3"></div>
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" name="send" class="btn btn-success" value="Send" />
-                    </div>
-                </form> -->
             </div>
         </div>        
     </div>

@@ -1,6 +1,6 @@
 
 <div class="container pt-3" id="login_form" >
-    <?php echo form_open(base_url().'register/check_username_email'); ?>
+    <?php echo form_open(base_url().'index.php/register/check_username_email'); ?>
 				<h2 class="text-center">Create account</h2>
 					<div class="form-group">
                         Enter Username

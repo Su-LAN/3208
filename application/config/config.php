@@ -35,8 +35,8 @@ else{
     $ip_address = $_SERVER['REMOTE_ADDR'];
 }
 $ip_address;
-$config['base_url'] = 'http://'.$ip_address.'/';
-
+//$config['base_url'] = 'http://'.$ip_address.'/';
+$config['base_url'] = 'http://35.232.86.123/';
 /*
 |--------------------------------------------------------------------------
 | Index File
