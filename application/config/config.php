@@ -23,7 +23,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://127.0.0.1/';
+if (!empty($_SERVER['HTTP_CLIENT_IP']))
+{    $ip_address = $_SERVER['HTTP_CLIENT_IP'];}
+//ip是否来自代理
+elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))
+{
+    $ip_address = $_SERVER['HTTP_X_FORWARDED_FOR'];
+}
+//ip是否来自远程地址
+else{
+    $ip_address = $_SERVER['REMOTE_ADDR'];
+}
+$ip_address;
+$config['base_url'] = 'http://'.$ip_address.'/';
 
 /*
 |--------------------------------------------------------------------------
