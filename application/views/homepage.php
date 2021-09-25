@@ -39,7 +39,7 @@ $ppp = '
   <input type="submit" value = "Collected" class="btn btn-primary float-end"></input>
 </div>
 </div>';
-    $img = base_url().'index.php//uploads/%s';
+    $img = base_url().'/uploads/%s';
         foreach($query as $value){
           $array = json_decode(json_encode($value), true);
           $img_file = sprintf($img, $array['filename']);
