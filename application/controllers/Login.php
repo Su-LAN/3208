@@ -47,31 +47,25 @@ class login extends CI_Controller {
 			
 				$captcha_response = trim($this->input->post('g-recaptcha-response'));
 		
-				
-
-				if($finalResponse['success'])
+			
+				if (password_verify($password,$hash))//check username and password
 				{
-					if (password_verify($password,$hash))//check username and password
-					{
-						$user_data = array(
-							'username' => $username,
-							'logged_in' => true 	//create session variable
-							);
-						if($remember){
-							echo $remember.'cookies';
-							set_cookie("username", $username,'300');
-							set_cookie("remember", $remember,'300');
-						}
-						$this->session->set_userdata($user_data); //set user status to login in session
-						redirect('homepage'); // direct user home page
-					}else{
-						$this->load->view('template/create_head');
-						$this->load->view('login', $data);	//if username password incorrect, show error msg and ask user to login
+					$user_data = array(
+						'username' => $username,
+						'logged_in' => true 	//create session variable
+						);
+					if($remember){
+						echo $remember.'cookies';
+						set_cookie("username", $username,'300');
+						set_cookie("remember", $remember,'300');
 					}
+					$this->session->set_userdata($user_data); //set user status to login in session
+					redirect('homepage'); // direct user home page
 				}else{
-					$this->session->set_flashdata('message', 'Validation Fail Try Again');
-					redirect('login');
+					$this->load->view('template/create_head');
+					$this->load->view('login', $data);	//if username password incorrect, show error msg and ask user to login
 				}
+	
 
 
 
