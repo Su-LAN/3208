@@ -25,9 +25,6 @@ function check_username_cookies(){
 					<?php echo $error; ?>
 					</div>
 					<div class="form-group">
-                        <div class="g-recaptcha" data-sitekey="6LcuztkaAAAAAM6L9F1ceUOdS9Ym6zw7gRqRmQQ3"></div>
-                    </div>
-					<div class="form-group">
 						<button type="submit" class="btn btn-primary" id="login_btn">Log in</button>
 					</div>
 					<div>
@@ -35,8 +32,8 @@ function check_username_cookies(){
 					</div>
 					<br>
 					<div class="clearfix">
-						<a class="float-start" href="<?php echo base_url()?>/register">Register</a>
-						<a class="float-end" href="<?php echo base_url()?>/forgotpw">Forgot Password</a>
+						<a class="float-start" href="<?php echo base_url()?>index.php/register">Register</a>
+						<a class="float-end" href="<?php echo base_url()?>index.php/forgotpw">Forgot Password</a>
 					</div>
 			<?php echo form_close(); ?>
 	</div>

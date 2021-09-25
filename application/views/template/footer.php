@@ -40,7 +40,6 @@ function compare(lasttime){
     
     if(time > 10000){
         console.log("111");
-        // window.location.href = "<?php echo base_url()?>login/logout";
         $.ajax({
             url: "<?php echo base_url();?>index.php/login/auto_logout",
             method:"post",

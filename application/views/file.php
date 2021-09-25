@@ -20,20 +20,6 @@
 }
 
 </style>
-<!-- <form method="post" action="<?php echo base_url()?>upload/do_upload" enctype="multipart/form-data">
-<div class="row justify-content-center" id="upload_form">
-    <div class="col-md-4">
-        <?php echo $error;?>
-		<div class="form-group">
-            <input type="file" name="userfile" size="20" id="file_update" class="upload" onChange="onUpload2(this.files[0])"> 
-        </div>
-        <div class="preview"></div>
-        <div class="form-group">
-            <input type="submit" value="upload" />
-        </div>
-    </div>
-</div>
-</form> -->
 
 
 <div class="container row justify-content-center" id="upload_form">

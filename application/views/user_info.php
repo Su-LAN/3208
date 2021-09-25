@@ -48,7 +48,7 @@
 
                                 <h6 class="f-w-600">Hi <?php echo $username;?></h6>
                                 <p>Web Designer</p> 
-                                <a href="<?php echo base_url()?>/user/edit_user">Edit</a>
+                                <a href="<?php echo base_url()?>index.php/user/edit_user">Edit</a>
                             </div>
                         </div>
                         <div class="col-sm-8">
