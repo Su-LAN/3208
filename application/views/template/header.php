@@ -14,7 +14,7 @@
         <head>
                 <title>INFS3202 Demo</title>
                 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/bootstrap.css">
-                <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/assets/css/header.css">
+                <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>index.php/application/assets/css/header.css">
                 <script src="<?php echo base_url(); ?>assets/js/jquery-3.6.0.min.js"></script>
                 <script src="<?php echo base_url(); ?>assets/js/bootstrap.js"></script>
                 <link href='https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/3.6.95/css/materialdesignicons.css'>
