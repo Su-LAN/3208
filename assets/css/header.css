@@ -1,0 +1,176 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body{
+    width: 99.5vw;
+    background-image: url(../img/login_bg.jpeg);
+    background-size: cover;background-position: center 0; 
+     background-repeat: no-repeat;  
+     background-attachment: fixed; 
+      -webkit-background-size: cover;  
+      -o-background-size: cover;  
+      -moz-background-size: cover;  
+      -ms-background-size: cover;
+    font-family: "Helvetica Neue",sans-serif;
+    font-weight: lighter;
+}
+#login_form{
+    color: seashell;
+    width: 20%;
+    margin-top: 30vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+.form-control{
+    width: 85%;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Beautiful-Full-HD-Wallpaper-Download-Free-PIC-WPE0010098.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.content {
+    width: 94%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+nav {
+    /* position: fixed; */
+    width: 100%;
+    line-height: 40px;
+}
+
+nav ul {
+    line-height: 40px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+
+nav.black ul {
+    background: #000;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.menu-icon {
+    line-height: 40px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+@media(max-width: 786px) {
+
+    .logo {
+          position: fixed;
+          top: 0;
+          margin-top: 16px;
+    }
+
+    nav ul {
+          max-height: 0px;
+          background: #000;
+    }
+
+    nav.black ul {
+          background: #000;
+    }
+
+    .showing {
+          max-height: 34em;
+    }
+
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 24px;
+          text-align: center;
+    }
+
+    .menu-icon {
+          display: block;
+    }
+}
+/* homepage */
+#homepage{
+    height: 100%;
+    margin-top: 72px;
+}
+#homepage_row{
+    height: 100%;
+}
+/* upload page */
+
+#upload_form{
+    margin-top: 72px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#search_text{
+    margin-right: 0;
+}
+#result{
+    background-color: rgba(255, 255, 255, 0.3);
+    display: none;
+    position: absolute;
+    text-align:left;
+    margin-top: 40px;
+}
+#login_btn{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-group{
+    padding: 3px;
+}
+.preview {
+    width: 90%;
+    margin-top: 10px;
+    padding: 10px;
+}
+.preview img,
+.preview video {
+    width: 100%;
+}
