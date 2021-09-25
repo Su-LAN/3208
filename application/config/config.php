@@ -36,7 +36,7 @@ else{
 }
 $ip_address;
 //$config['base_url'] = 'http://'.$ip_address.'/';
-$config['base_url'] = 'http://35.232.86.123/proj/';
+$config['base_url']    = 'http://'.$_SERVER['HTTP_HOST'].'/';
 /*
 |--------------------------------------------------------------------------
 | Index File
