@@ -53,7 +53,7 @@ class Paypal extends CI_Controller{
 					$this->load->view("user_info",$user_data); //if user already logined show upload page
 				}
 			}else{
-				redirect('login'); //if user already logined direct user to home page
+				redirect('index.php/login'); //if user already logined direct user to home page
 			}
 		}else{
 			$this->load->view("user_info",$user_data); //if user already logined show login page
@@ -78,7 +78,7 @@ class Paypal extends CI_Controller{
 					$this->load->view("user_info",$user_data); //if user already logined show upload page
 				}
 			}else{
-				redirect('login'); //if user already logined direct user to home page
+				redirect('index.php/login'); //if user already logined direct user to home page
 			}
 		}else{
 			$this->load->view("user_info",$user_data); //if user already logined show login page

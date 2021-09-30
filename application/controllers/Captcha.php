@@ -57,19 +57,19 @@ class Captcha extends CI_Controller {
 
 				$this->session->set_flashdata('success_message', 'Data Stored Successfully');
 
-				redirect('captcha');
+				redirect('index.php/captcha');
 			}
 			else
 			{
 				$this->session->set_flashdata('message', 'Validation Fail Try Again');
-				redirect('captcha');
+				redirect('index.php/captcha');
 			}
 		}
 		else
 		{
 			$this->session->set_flashdata('message', 'Validation Fail Try Again');
 
-			redirect('captcha');
+			redirect('index.php/captcha');
 		}
 	}
 

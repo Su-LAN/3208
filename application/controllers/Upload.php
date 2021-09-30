@@ -23,7 +23,7 @@ class Upload extends CI_Controller
 				}
 			}else{
 				$data["is_login"]=$this->session->userdata('logged_in');
-				redirect('login'); //if user already logined direct user to home page
+				redirect('index.php/login'); //if user already logined direct user to home page
 			}
 		}else{
 			$data["is_login"]=true;
@@ -48,7 +48,7 @@ class Upload extends CI_Controller
         } else {
 			$this->load->model('file_model');
 			$this->file_model->upload($this->upload->data('file_name'), $this->upload->data('full_path'),$this->session->userdata('username'));
-			redirect('login');
+			redirect('index.php/login');
             // $this->load->view('template/header');
             // $this->load->view('homepage');
             // $this->load->view('template/footer');

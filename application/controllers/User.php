@@ -18,7 +18,7 @@ class user extends CI_Controller {
 					$this->load->view("user_info",$user_data); //if user already logined show upload page
 				}
 			}else{
-				redirect('login'); //if user already logined direct user to home page
+				redirect('index.php/login'); //if user already logined direct user to home page
 			}
 		}else{
 			$this->load->view("user_info",$user_data); //if user already logined show login page
@@ -52,7 +52,7 @@ class user extends CI_Controller {
             if($this->form_validation->run()==TRUE){
                 $username = $this->session->userdata("username");
                 $this->user_model->edit_info($email,$phone,$username);
-                redirect("user");
+                redirect("index.php/user");
             }else{
                 $this->load->view("edit_user",$user_data);
             }
@@ -76,7 +76,7 @@ class user extends CI_Controller {
             if($this->form_validation->run()==TRUE){
                 $username = $this->session->userdata("username");
                 $this->user_model->edit_info($email,$phone,$username);
-                redirect("user");
+                redirect("index.php/user");
             }else{
                 $this->load->view("edit_user",$user_data);
             }

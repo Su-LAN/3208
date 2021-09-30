@@ -29,7 +29,7 @@ class login extends CI_Controller {
 			$this->load->view('template/create_head');
 			$this->load->view('login', $data); //if user has not login ask user to login
 		}else{
-			redirect("homepage");
+			redirect("index.php/homepage");
 		}
 		
 	}
@@ -55,14 +55,14 @@ class login extends CI_Controller {
 						'logged_in' => true 	//create session variable
 						);
 					$this->session->set_userdata($user_data); //set user status to login in session
-					redirect('homepage'); // direct user home page
+					redirect('index.php/homepage'); // direct user home page
 				}else{
 					$this->load->view('template/create_head');
 					$this->load->view('login', $data);	//if username password incorrect, show error msg and ask user to login
 				}	
 		}else{
 			{
-				redirect('login'); //if user already logined direct user to home page
+				redirect('index.php/login'); //if user already logined direct user to home page
 			}
 		$this->load->view('template/footer');
 		}
@@ -74,7 +74,7 @@ class login extends CI_Controller {
 		$this->session->unset_userdata('logged_in'); //delete login statususername
 		$this->session->unset_userdata('username');
 		set_cookie("remember", false,'300');
-		redirect('login'); // redirect user back to login
+		redirect('index.php/login'); // redirect user back to login
 	}
 	public function auto_logout(){
 		$this->load->helper('url');
