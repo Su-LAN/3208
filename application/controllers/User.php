@@ -48,8 +48,6 @@ class user extends CI_Controller {
         $phone = $this->input->post('phone');
         $img = $this->input->post('userimg');
         $this->load->library('upload', $config);
-        // echo $this->upload->data('full_path');
-        // echo $this->upload->do_upload('userfile');
         if ( !$this->upload->do_upload('userimg')){
             if($this->form_validation->run()==TRUE){
                 $username = $this->session->userdata("username");

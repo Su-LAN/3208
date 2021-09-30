@@ -164,7 +164,7 @@
                     ?>
                     <li>
                     <?php
-                        $login_link =  '<a href="'.base_url().'index.php/%s"> %s </a>';
+                        $login_link =  "<a href=\"".base_url()."index.php/%s\"> %s </a>";
                         if(isset($is_login)) {
                             if ($is_login == true) {
                                 $link = sprintf($login_link, 'login/logout', "Logout");

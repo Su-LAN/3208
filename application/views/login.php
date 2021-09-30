@@ -1,6 +1,4 @@
-<?php
- //put your code here 
-?>
+<?php ?>
 <script>
 function check_username_cookies(){
 	if("<?php if(isset($_COOKIE['username'])) {echo $_COOKIE['username'];} else {echo false;}?>" ){
@@ -26,9 +24,6 @@ function check_username_cookies(){
 					</div>
 					<div class="form-group">
 						<button type="submit" class="btn btn-primary" id="login_btn">Log in</button>
-					</div>
-					<div>
-					<label class="float-start" id="remember_label"><input type="checkbox" name="remember"> Remember me</label>
 					</div>
 					<br>
 					<div class="clearfix">
