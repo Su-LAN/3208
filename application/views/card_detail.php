@@ -149,7 +149,7 @@ $no_like_echo = '<div class="card img_ct" style="width: 40rem;">
     function load_data(limit, start)
     {
       $.ajax({
-        url:"<?php echo base_url(); ?>homepage/fetch",
+        url:"<?php echo base_url(); ?>index.php/homepage/fetch",
         method:"POST",
         data:{limit:limit, start:start, fileid: <?php echo $fileid;?>},
         cache: false,
