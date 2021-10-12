@@ -12,7 +12,7 @@
     }
     </style>
         <head>
-                <title>INFS3202 Demo</title>
+                <title>INFS3208 Demo</title>
                 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/bootstrap.css">
                 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/header.css">
                 <script src="<?php echo base_url(); ?>assets/js/jquery-3.6.0.min.js"></script>
