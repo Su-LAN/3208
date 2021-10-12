@@ -23,7 +23,7 @@
 
 
 <div class="container row justify-content-center" id="upload_form">
-    <?php echo form_open_multipart("upload/multiple_upload"); ?>
+    <?php echo form_open_multipart("index.php/upload/multiple_upload"); ?>
     <p><input type="checkbox" name="anonymous" />Anonymous </p>
     <div class="col-6 col-md-4">
         Upload multiple files at the same time

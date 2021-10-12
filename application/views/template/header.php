@@ -116,7 +116,7 @@
                   <i class="fa fa-bars fa-2x"></i>
                </div>
                <div class="logo">
-                  INFS3202
+                  INFS3208
                </div>
                <div class="menu">
                   <ul>

@@ -1,6 +1,6 @@
 <html>
         <head>
-                <title>INFS3202 user_info</title>
+                <title>INFS3208 user_info</title>
                 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/bootstrap.css">
                 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/user_info.css">
                 <script src="<?php echo base_url(); ?>assets/js/jquery-3.6.0.min.js"></script>

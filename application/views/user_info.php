@@ -3,7 +3,7 @@
 ?>
 <html>
         <head>
-                <title>INFS3202 user_info</title>
+                <title>INFS3208 user_info</title>
                 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/bootstrap.css">
                 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/user_info.css">
                 <script src="<?php echo base_url(); ?>assets/js/jquery-3.6.0.min.js"></script>
@@ -16,7 +16,7 @@
                   <i class="fa fa-bars fa-2x"></i>
                </div>
                <div class="logo">
-                  INFS3202
+                  INFS3208
                </div>
                <div class="menu">
                   <ul>
@@ -37,7 +37,7 @@
 
 
 
-                                    <img width="100" height="100" src="https://infs3202-5b0df042.uqcloud.net/infs3200/uploads/user_avatar/<?php echo $path;?>" class="img-radius" alt="User-Profile-Image"/>
+                                    <img width="100" height="100" src="<?php echo base_url()?>uploads/user_avatar/<?php echo $path;?>" class="img-radius" alt="User-Profile-Image"/>
                                 </div>
                                 <a href="https://www.paypal.com/donate?business=KFXBTRY2P5LV4&item_name=Buy+a+rename+card&currency_code=AUD&amount=14.99">
                                 Donate AUD:14.99
