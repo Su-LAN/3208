@@ -122,7 +122,7 @@
                   <ul>
                      <li>
                      <div id="result"></div>
-                        <?php echo form_open('ajax'); ?>
+                        <?php echo form_open('index.php/ajax'); ?>
                         <input class="form-control" type="search" id="search_text" placeholder="Search" name="search" aria-label="Search" onclick="clickFn()" onblur="onBlur()">
                         <?php echo form_close(); ?>
                     </li>

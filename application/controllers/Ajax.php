@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class ajax extends CI_Controller {
+class Ajax extends CI_Controller {
     public function index(){
         $this->load->model('file_model');
         $key_word = $this->input->post("search");
