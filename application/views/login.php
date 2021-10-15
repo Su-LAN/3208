@@ -28,7 +28,6 @@ function check_username_cookies(){
 					<br>
 					<div class="clearfix">
 						<a class="float-start" href="<?php echo base_url()?>index.php/register">Register</a>
-						<a class="float-end" href="<?php echo base_url()?>index.php/forgotpw">Forgot Password</a>
 					</div>
 			<?php echo form_close(); ?>
 	</div>
