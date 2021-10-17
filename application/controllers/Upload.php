@@ -34,12 +34,13 @@ class Upload extends CI_Controller
     }
     public function do_upload() {
 		
-        $config['upload_path'] = './uploads/';
-		$config['allowed_types'] = 'gif|jpg|png|mp4';
-		$config['max_size']     = 100000000;
-		$config['max_width'] = 1024000;
-		$config['max_height'] = 768000;
-		$this->load->library('upload', $config);
+        // $config['upload_path'] = './uploads/';
+		// $config['allowed_types'] = 'gif|jpg|png|mp4';
+		// $config['max_size'] = 100000000;
+		// $config['max_width'] = 1024000;
+		// $config['max_height'] = 768000;
+		// $this->load->library('upload', $config);
+		$this->load->library('upload');
 		echo $this->upload->data('file_name');
 		// if (!$this->upload->do_upload('userfile')) {
         //     $this->load->view('template/header');
