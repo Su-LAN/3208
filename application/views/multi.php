@@ -1,6 +1,6 @@
 
 <div class="container">
-    <?php echo form_open_multipart('upload/do_upload');?>
+    <?php echo form_open_multipart('index.php/upload/do_upload');?>
 
     <input type="file" name="userfile" size="20" />
 
