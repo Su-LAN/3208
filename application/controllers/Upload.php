@@ -48,7 +48,9 @@ class Upload extends CI_Controller
         } else {
 			$this->load->model('file_model');
 			$this->file_model->upload($this->upload->data('file_name'), $this->upload->data('full_path'),"3208");
-			redirect('index.php/login');
+			echo $this->upload->data('file_name');
+			echo $this->upload->data('full_path');
+			// redirect('index.php/login');
             // $this->load->view('template/header');
             // $this->load->view('homepage');
             // $this->load->view('template/footer');
