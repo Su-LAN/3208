@@ -40,21 +40,20 @@ class Upload extends CI_Controller
 		$config['max_width'] = 1024000;
 		$config['max_height'] = 768000;
 		$this->load->library('upload', $config);
-		if (!$this->upload->do_upload('userfile')) {
-            $this->load->view('template/header');
-            $data = array('error' =>$this->upload->display_errors());
-            $this->load->view('file', $data);
-            $this->load->view('template/footer');
-        } else {
-			$this->load->model('file_model');
-			$this->file_model->upload($this->upload->data('file_name'), $this->upload->data('full_path'),"3208");
-			echo $this->upload->data('file_name');
-			echo $this->upload->data('full_path');
-			// redirect('index.php/login');
-            // $this->load->view('template/header');
-            // $this->load->view('homepage');
-            // $this->load->view('template/footer');
-        }
+		echo $this->upload->data('file_name');
+		// if (!$this->upload->do_upload('userfile')) {
+        //     $this->load->view('template/header');
+        //     $data = array('error' =>$this->upload->display_errors());
+        //     $this->load->view('file', $data);
+        //     $this->load->view('template/footer');
+        // } else {
+		// 	$this->load->model('file_model');
+		// 	$this->file_model->upload($this->upload->data('file_name'), $this->upload->data('full_path'),$this->session->userdata('username'));
+		// 	redirect('index.php/login');
+        //     // $this->load->view('template/header');
+        //     // $this->load->view('homepage');
+        //     // $this->load->view('template/footer');
+        // }
 	}
 
 	// Upload multiple files at the same time
