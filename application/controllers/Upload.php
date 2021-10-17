@@ -34,7 +34,7 @@ class Upload extends CI_Controller
     }
     public function do_upload() {
 		
-        $config['upload_path'] = base_url().'proj/uploads/';
+        $config['upload_path'] = './uploads/';
 		$config['allowed_types'] = 'gif|jpg|png|mp4';
 		$config['max_size']     = 100000000;
 		$config['max_width'] = 1024000;
@@ -58,11 +58,65 @@ class Upload extends CI_Controller
 	// Upload multiple files at the same time
 	public function multiple_upload()
 	{
-		 echo $_FILES["userfile"];
-		
+		 //echo $_FILES["userfile"];
+		 if (count($_FILES["userfile"]["name"]) > 0)
+		 {
+			 $size = count($_FILES["userfile"]["name"]);
+			 for ($i = 0; $i < $size; $i++)
+			 {
+				 $_FILES['new_file']['name'] = $_FILES['userfile']['name'][$i];
+				 $_FILES['new_file']['type'] = $_FILES['userfile']['type'][$i];
+				 $_FILES['new_file']['tmp_name'] = $_FILES['userfile']['tmp_name'][$i];
+				 $_FILES['new_file']['error'] = $_FILES['userfile']['error'][$i];
+				 $_FILES['new_file']['size'] = $_FILES['userfile']['size'][$i];
+				 $config['upload_path'] = '/var/www/html/proj/uploads/';
+				 $config["upload_path"] = './uploads/';
+				 //$config["allowed_types"] = "jpg|png|gif|png|mp4|JPG]PNG";
+				 $config["max_size"] = 10000;
+				 $config["max_width"] = 10240;
+				 $config["max_height"] = 7600;
+ 
+				 $this->load->library('upload', $config);
+				 $data["is_login"]=true;
+				 $this->load->view("template/header");
+				 if (!$this->upload->do_upload("new_file"))
+				 {
+					 $data = array('error'=> $this->upload->display_errors());
+					 $this->load->view('file', $data);
+					 $this->load->view("template/footer");
+				 }
+				 else
+				 {
+					 $this->load->model('file_model');
+					 if($this->input->post("anonymous") == TRUE){
+					 	$this->file_model->upload(
+					 		$this->upload->data("file_name"),
+					 		$this->upload->data("full_path"),
+					 		"anonymous"
+					 	);
+					 }else{
+					 	$this->file_model->upload(
+					     $this->upload->data("file_name"),
+					     $this->upload->data("full_path"),
+					     $this->session->userdata("username")
+					 );
+					 }
+					 
+					 $data["query"] = $this->file_model->print_data();
+					 // $data["is_login"]=true;
+					 
+					 $this->load->view('homepage',$data);
+					 $this->load->view("template/footer");
+					 
+				 }
+			 }
+		 }
 		
 		
 
+	}
+	public function test(){
+		$this->load->view('multi');
 	}
 	
 }
