@@ -82,33 +82,34 @@ class Upload extends CI_Controller
 				$this->load->view("template/header");
                 if (!$this->upload->do_upload("new_file"))
                 {
-					
-                    $data = array('error'=> $this->upload->display_errors());
-					$this->load->view('file', $data);
-					$this->load->view("template/footer");
+					echo("no");
+                    // $data = array('error'=> $this->upload->display_errors());
+					// $this->load->view('file', $data);
+					// $this->load->view("template/footer");
 				}
 				else
 				{
-					$this->load->model('file_model');
-					if($this->input->post("anonymous") == TRUE){
-						$this->file_model->upload(
-							$this->upload->data("file_name"),
-							$this->upload->data("full_path"),
-							"anonymous"
-						);
-					}else{
-						$this->file_model->upload(
-                        $this->upload->data("file_name"),
-                        $this->upload->data("full_path"),
-                        $this->session->userdata("username")
-					);
-					}
+					echo("yes");
+					// $this->load->model('file_model');
+					// if($this->input->post("anonymous") == TRUE){
+					// 	$this->file_model->upload(
+					// 		$this->upload->data("file_name"),
+					// 		$this->upload->data("full_path"),
+					// 		"anonymous"
+					// 	);
+					// }else{
+					// 	$this->file_model->upload(
+                    //     $this->upload->data("file_name"),
+                    //     $this->upload->data("full_path"),
+                    //     $this->session->userdata("username")
+					// );
+					// }
 					
-					$data["query"] = $this->file_model->print_data();
-        			// $data["is_login"]=$this->session->userdata('logged_in');
+					// $data["query"] = $this->file_model->print_data();
+        			// // $data["is_login"]=$this->session->userdata('logged_in');
 					
-					$this->load->view('homepage',$data);
-					$this->load->view("template/footer");
+					// $this->load->view('homepage',$data);
+					// $this->load->view("template/footer");
 					
 				}
 			}
