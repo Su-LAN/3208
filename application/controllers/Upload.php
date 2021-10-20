@@ -73,7 +73,7 @@ class Upload extends CI_Controller
 				 $_FILES['new_file']['size'] = $_FILES['userfile']['size'][$i];
 				 $config['upload_path'] = '/var/www/html/proj/uploads/';
 				 $config["upload_path"] = './uploads/';
-				 //$config["allowed_types"] = "jpg|png|gif|png|mp4|JPG]PNG";
+				 $config["allowed_types"] = "jpg|png|gif|png|mp4|JPG]PNG";
 				 $config["max_size"] = 10000;
 				 $config["max_width"] = 10240;
 				 $config["max_height"] = 7600;
