@@ -84,7 +84,7 @@ class Upload extends CI_Controller
 				 if (!$this->upload->do_upload("new_file"))
 				 {
 					 $data = array('error'=> $this->upload->display_errors());
-					 echo $data;
+					 print_r($this->upload->display_errors());
 					//  $this->load->view('file', $data);
 					//  $this->load->view("template/footer");
 				 }
