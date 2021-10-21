@@ -127,7 +127,6 @@
                         <?php echo form_close(); ?>
                     </li>
                      <li><a href="<?php echo base_url(); ?>index.php/homepage">Home</a></li>
-                     <li><a href="<?php echo base_url(); ?>index.php/sms">Connect Us</a></li>
                      <?php
                         $update_home =  '<li> <a href="'.base_url().'index.php/%s"> %s </a></li>';
                         $link_update="";
