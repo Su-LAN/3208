@@ -42,7 +42,6 @@
                                 <a href="https://www.paypal.com/donate?business=KFXBTRY2P5LV4&item_name=Buy+a+rename+card&currency_code=AUD&amount=14.99">
                                 Donate AUD:14.99
                                 </a>
-                                <a href="<?php echo base_url('products/buy/'.'1'); ?>" class="btn">Donate USD:14.99</a>
 
 
 
@@ -77,7 +76,7 @@
                                     </div>
                                     
                                     
-                                    <div class="col-sm-6">
+                                    <!-- <div class="col-sm-6">
                                         <p class="m-b-10 f-w-600">Is Email confirmed</p>
                                         <h6 class="text-muted f-w-400">
                                         <?php 
@@ -94,7 +93,7 @@
                                                 echo "YES";
                                             }
                                         ?></h6>
-                                    </div>
+                                    </div> -->
                                     
                                 </div>
                                 <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">Projects</h6>
@@ -104,10 +103,6 @@
                                         <a href="http://www.facebook.com/sharer.php?u=<?php echo base_url();?>index.php/homepage">
                                         share with your facebook friend 
                                         </a>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <p class="m-b-10 f-w-600">Most Viewed</p>
-                                        <h6 class="text-muted f-w-400">Dinoter husainm</h6>
                                     </div>
                                 </div>
                                 <ul class="social-link list-unstyled m-t-40 m-b-10">

@@ -90,10 +90,6 @@
                                         <p class="m-b-10 f-w-600">Recent</p>
                                         <h6 class="text-muted f-w-400">Sam Disuja</h6>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <p class="m-b-10 f-w-600">Most Viewed</p>
-                                        <h6 class="text-muted f-w-400">Dinoter husainm</h6>
-                                    </div>
                                 </div>
                                 
                                 <ul class="social-link list-unstyled m-t-40 m-b-10">
